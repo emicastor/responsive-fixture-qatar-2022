@@ -1,0 +1,663 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    border-radius: 4rem;
+    background: #d1c4c4;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #b84379;
+}
+
+.body {
+    background-image: url(/assets/img/background-flag-qatar.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: .938rem;
+}
+.main {
+    overflow: hidden;
+}
+
+.section {
+    padding: 5.5rem 0 1rem;
+}
+
+.container {
+    max-width: 1000px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.countdown h1 {
+    text-align: center;
+    color: #FFF;
+}
+
+.countdown__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #5C0B31;
+    text-align: center;
+}
+
+.countdown h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3.5rem;
+}
+
+.countdown h1 span {
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 68%, #6BBBFF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.time {
+    flex: 1;
+    border: 1px solid #440414;
+    padding: .5rem 0;
+    background-color: #F2F2F2;
+    /*background-color: #D4D4D3;*/
+}
+
+.time h2 {
+    font-size: 2rem;
+}
+
+.time p {
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+
+/* ------ FIXTURE -------- */
+
+.fixture__card {
+    background-color: #F2F2F2;
+    padding: 1.25rem 1rem;
+    /* .65rem .6rem*/
+    border-radius: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.fixture__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: .5rem;
+}
+
+.fixture__header h1 {
+    font-size: 1.2rem;
+    align-self: flex-start;
+
+
+    color: #b84379;
+    background-image: -webkit-linear-gradient(0deg, #b84379 0%, #5C0B31 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+
+
+}
+
+.fixture__img-country {
+    width: 30px;
+}
+
+/* color texto: #82124B */
+.fixture__body {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem .5rem;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    width: 250px;
+    height: 25px;
+    /*border-radius: .3rem;*/
+}
+
+table tr:nth-child(even) td {
+    /*background-color: #bebbbb65;*/
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+table td {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .635rem;
+    /* o 500? si es asi Argentina 700 */
+}
+
+.country-left {
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.arg {
+    background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%) !important;
+    color: #FFF;
+    /*background: rgb(252,255,189);
+background: radial-gradient(circle, rgba(252,255,189,1) 0%, rgba(246,246,246,1) 20%, rgba(132,172,252,1) 100%);*/
+
+}
+
+.country-right {
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.date {
+    text-align: end;
+}
+
+.fixture__hour--stadium {
+    font-size: .563rem;
+    font-weight: 300;
+}
+
+.result {
+    background: #d1c4c4 !important;
+    width: 120px;
+}
+
+.estadios {
+    height: 520px;
+}
+
+.stadium__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .5rem;
+}
+
+.stadium__img {
+    width: 350px;
+    border-radius: 1.5rem;
+}
+
+.stadium__name {
+    font-size: 1.6rem;
+    color: #b84379;
+    background-image: -webkit-linear-gradient(0deg, #b84379 10%, #5C0B31 74%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.stadium__body {
+    display: flex;
+    flex-direction: column;
+    padding: .5rem .5rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+}
+
+.stadium__body h2 {
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+    font-weight: 600;
+
+}
+
+.stadium__description {
+    font-size: .95rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+
+
+.stadium__match-calendar {
+    border: 1px solid #b84379;
+    border-radius: 1.5rem;
+    padding: .5rem .5rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.stadium__match-calendar p {
+    font-size: .875rem;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 2rem;
+    margin-top: -1.5rem;
+}
+
+.filters__item {
+    cursor: pointer;
+    color: #F2F2F2;
+    padding: .25rem .75rem;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.active {
+    /*background-color: #b84379;*/
+    background-color: rgb(248, 209, 149);
+    color: #020202;
+}
+
+/* Swiper class */
+
+.swiper-pagination-bullet {
+    background-color: #5C0B31;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #F2F2F2;
+}
+
+.fixture__img-logo {
+    width: 40px;
+}
+
+.orden-match {
+    width: 4%;
+    font-size: .753rem;
+}
+
+.champion {
+    padding-left: 50px;
+}
+
+.background-champion {
+    background-image: linear-gradient(to top, #c71d6f 0%, #d09693 100%) !important;
+    color: #F2F2F2;
+}
+
+
+/*----------- MEDIAS QUERIES ----------- */
+
+
+@media screen and (max-width:320px) {
+    .section {
+        padding: 3.5rem 0 1rem;
+    }
+
+    .fixture__card {
+        background-color: #F2F2F2;
+        padding: .5rem 1rem;
+        border-radius: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .fixture__body {
+        display: flex;
+        flex-direction: column;
+        padding: .6rem .3rem;
+    }
+
+    .fixture__img-country {
+        width: 27px;
+    }
+
+    th,
+    td {
+        width: 258px;
+        height: 25px;
+        /*border-radius: .3rem;*/
+    }
+
+    table td {
+        font-size: .650rem;
+        /* o 500? si es asi Argentina 700 */
+    }
+
+    .fixture__hour--stadium {
+        font-size: .500rem;
+        font-weight: 300;
+    }
+
+    .fixture__header {
+        margin-top: 5px;
+    }
+
+    .fixture__header h1 {
+        font-size: 1rem;
+        align-self: center;
+    }
+
+    .filters__item {
+        font-size: .683rem;
+        padding: .25rem .35rem;
+    }
+
+    .fixture__stadium {
+        margin-bottom: .1rem;
+    }
+
+    .stadium__img {
+        width: 240px;
+        padding-top: 10px;
+    }
+
+    .stadium__name {
+        font-size: 1rem;
+    }
+
+    .stadium__description {
+        font-size: .75rem;
+        margin-bottom: .3rem;
+        text-align: left;
+    }
+
+    .estadios {
+        height: 430px;
+    }
+
+    .stadium__body h2 {
+        font-size: .85rem;
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .stadium__match-calendar p {
+        font-size: .675rem;
+    }
+
+    .stadium__match-calendar {
+        position: absolute;
+        bottom: 20px;
+        width: 60%;
+    }
+
+    .orden-match {
+        font-size: 9px;
+        padding: 0 .2rem;
+    }
+
+    .fixture__img-logo {
+        width: 25px;
+    }
+}
+
+
+@media screen and (min-width: 375px) {
+
+    .fixture__hour--stadium {
+        font-size: .560rem;
+        font-weight: 300;
+    }
+
+    table td {
+        font-size: .750rem;
+        /* o 500? si es asi Argentina 700 */
+    }
+
+    .fixture__header h1 {
+        align-self: center;
+    }
+
+    .fixture__img-country {
+        width: 35px;
+    }
+
+    .filters__item {
+        padding: .25rem .25rem;
+        font-size: .9rem;
+    }
+
+    .stadium__img {
+        width: 275px;
+        padding-top: 10px;
+    }
+
+    .stadium__name {
+        font-size: 1.2rem;
+    }
+
+    .stadium__description {
+        font-size: .75rem;
+        margin-bottom: .3rem;
+        text-align: center;
+    }
+
+    .estadios {
+        height: 480px;
+    }
+
+    .stadium__body h2 {
+        font-size: .85rem;
+        position: absolute;
+        bottom: 100px;
+    }
+
+    .stadium__match-calendar p {
+        font-size: .675rem;
+    }
+
+    .stadium__match-calendar {
+        position: absolute;
+        bottom: 20px;
+        width: 60%;
+    }
+
+    .orden-match {
+        font-size: 9px;
+        padding: 0 .2rem;
+    }
+
+    .fixture__img-logo {
+        width: 25px;
+    }
+
+}
+
+@media screen and (min-width: 425px) {
+
+    .fixture__hour--stadium {
+        font-size: .600rem;
+    }
+
+    table td {
+        font-size: .950rem;
+        /* o 500? si es asi Argentina 700 */
+    }
+
+    .date {
+        text-align: center;
+    }
+
+    .fixture__img-country,
+    .fixture__img-logo {
+        width: 44px;
+    }
+
+    .fixture__header h1 {
+        align-self: center;
+        font-size: 1.3rem;
+    }
+
+    .filters__item {
+        padding: .25rem .45rem;
+        font-size: 1rem;
+    }
+
+    .stadium__img {
+        width: 330px;
+    }
+
+    .stadium__name {
+        font-size: 1.4rem;
+    }
+
+    .stadium__description {
+        font-size: .85rem;
+        margin-bottom: .3rem;
+    }
+
+    .estadios {
+        height: 500px;
+    }
+
+    .stadium__body h2 {
+        font-size: .85rem;
+        position: absolute;
+        bottom: 105px;
+    }
+
+    .stadium__match-calendar p {
+        font-size: .775rem;
+    }
+
+    .stadium__match-calendar {
+        position: absolute;
+        bottom: 20px;
+        width: 60%;
+    }
+
+    .orden-match {
+        font-size: 11px;
+        padding: 0 .2rem;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .fixture__hour--stadium {
+        font-size: .530rem;
+    }
+
+    .section {
+        padding: 3.5rem 0 1rem;
+    }
+
+    table td {
+        font-size: .820rem;
+        /* o 500? si es asi Argentina 700 */
+    }
+
+    .stadium__img {
+        width: 290px;
+    }
+
+    .filters {
+        margin-top: 0;
+    }
+
+    br {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fixture__hour--stadium {
+        font-size: .800rem;
+    }
+
+    table td {
+        font-size: 1rem;
+        /* o 500? si es asi Argentina 700 */
+    }
+
+    .date {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    th,
+    td {
+        height: 33px;
+        /*border-radius: .3rem;*/
+    }
+
+    .fixture__img-country {
+        width: 60px;
+    }
+
+    .fixture__header h1 {
+        font-size: 2rem;
+    }
+
+    table td {
+        font-size: 1.2rem;
+        /* o 500? si es asi Argentina 700 */
+    }
+
+    /* ------------ */
+    .countdown h1 {
+        font-size: 4rem;
+    }
+
+    .time h2 {
+        font-size: 2.6rem;
+        font-weight: 700;
+    }
+
+    .time p {
+        font-size: 1rem;
+    }
+
+    .filters__item {
+        padding: .25rem .75rem;
+        font-size: 1.4rem;
+    }
+
+    .orden-match {
+        font-size: 13px;
+        padding: 0 .2rem;
+    }
+
+    .stadium__body h2 {
+        font-size: 1.1rem;
+        position: absolute;
+        bottom: 135px;
+    }
+
+    .stadium__match-calendar p {
+        font-size: .985rem;
+    }
+
+    .stadium__match-calendar {
+        position: absolute;
+        bottom: 20px;
+        width: 60%;
+    }
+
+    .stadium__description {
+        font-size: 1rem;
+    }
+}
