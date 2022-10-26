@@ -318,7 +318,7 @@ background: radial-gradient(circle, rgba(252,255,189,1) 0%, rgba(246,246,246,1) 
 /*----------- MEDIAS QUERIES ----------- */
 
 
-@media screen and (max-width:320px) {
+@media screen and (min-width:320px) {
     .section {
         padding: 3.5rem 0 1rem;
     }
@@ -562,6 +562,17 @@ background: radial-gradient(circle, rgba(252,255,189,1) 0%, rgba(246,246,246,1) 
 
     .footer__img-logo {
         width: 100px;
+    }
+
+}
+
+@media screen and (min-width: 576px) {
+    .stadium__img {
+        width: 230px;
+    }
+
+    .stadium__match-calendar {
+        width: 70%;
     }
 
 }
