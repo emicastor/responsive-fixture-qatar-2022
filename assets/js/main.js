@@ -85,3 +85,7 @@ const typed = new Typed('.typed', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
+
+const footerYear = document.getElementById('footer-year');
+const year = new Date().getFullYear();
+footerYear.innerHTML = year;
