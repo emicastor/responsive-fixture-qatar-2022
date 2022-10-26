@@ -296,6 +296,24 @@ background: radial-gradient(circle, rgba(252,255,189,1) 0%, rgba(246,246,246,1) 
     color: #F2F2F2;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    margin-top: -50px;
+}
+
+.footer__year {
+    color: gray;
+    font-size: 8px;
+}
+
+.footer__img-logo {
+    width: 90px;
+}
+
 
 /*----------- MEDIAS QUERIES ----------- */
 
@@ -542,6 +560,10 @@ background: radial-gradient(circle, rgba(252,255,189,1) 0%, rgba(246,246,246,1) 
         padding: 0 .2rem;
     }
 
+    .footer__img-logo {
+        width: 100px;
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -590,6 +612,19 @@ background: radial-gradient(circle, rgba(252,255,189,1) 0%, rgba(246,246,246,1) 
 
     .date {
         text-align: center;
+    }
+
+    .footer {
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+
+    .footer__img-logo {
+        width: 130px;
+    }
+
+    .footer__year {
+        font-size: 10px;
     }
 }
 
